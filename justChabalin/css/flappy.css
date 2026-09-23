@@ -1,0 +1,394 @@
+html,
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow: hidden;
+    user-select: none;
+    z-index: 0;
+    background: linear-gradient(to bottom, #336aa8 0%, #dcf4ff 100%);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+
+    background-image:
+        repeating-linear-gradient(0deg,
+            rgba(255, 255, 255, .03) 0px,
+            rgba(255, 255, 255, .03) 2px,
+            transparent 2px,
+            transparent 4px),
+        repeating-linear-gradient(90deg,
+            rgba(0, 0, 0, .03) 0px,
+            rgba(0, 0, 0, .03) 2px,
+            transparent 2px,
+            transparent 4px);
+
+    opacity: .5;
+}
+
+#fondo {
+    position: absolute;
+    background-image: url(../imagenes/minijuegos/fondo.png);
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    bottom: -120px;
+    z-index: -2;
+    background-repeat: repeat-x;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}
+
+#pasto {
+    position: absolute;
+    background-image: url(../imagenes/minijuegos/pasto.png);
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    bottom: -120px;
+    z-index: -2;
+    background-repeat: repeat-x;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}
+
+main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#escenario {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#jugador {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    background-image: url(../imagenes/minijuegos/anaIcon.png);
+    bottom: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.segundoEstado {
+    animation: segundoo 3s cubic-bezier(0.175, 0.885, 0.32, 1) forwards;
+}
+
+.segundoImg {
+    animation: segundoImg 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes segundoo {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 10%;
+    }
+
+}
+
+@keyframes segundoImg {
+    from {
+        height: 160px;
+        width: 240px;
+    }
+
+    to {
+        height: 120px;
+        width: 180px;
+    }
+
+}
+
+#jugador img {
+    height: 160px;
+    width: 240px;
+    filter: drop-shadow(-5px 5px 0px black);
+}
+
+.moverHead {
+    animation: rotarHead 2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes rotarHead {
+    from {
+        transform: rotate(-10deg) skew(5deg);
+    }
+
+    to {
+        transform: rotate(20deg) skew(0deg);
+    }
+}
+
+#clickHere {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-10%);
+    bottom: 15%;
+    width: 20%;
+    transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation: subirDown 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+
+}
+
+@keyframes subirDown {
+    0% {
+        bottom: 15%;
+    }
+
+    50% {
+        bottom: 17%;
+    }
+
+    100% {
+        bottom: 15%;
+    }
+
+}
+
+#contador {
+    position: absolute;
+    top: 5px;
+    border-radius: 15px;
+    font-size: 5em;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: this;
+    padding: 0px 20px;
+    color: white;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0),
+        -2px -2px 0px rgb(0, 0, 0);
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#tuberia1,
+#tuberia2,
+#tuberia3,
+#tuberia4,
+#tuberia5 {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 15%;
+    height: 100%;
+    filter: saturate(2) drop-shadow(10px 5px 0px black);
+}
+
+#negro {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 999;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.fadeInNegro {
+    animation: fadeIn 3s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+.fadeOutNegro {
+    animation: fadeOut 2s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+
+.mover {
+    animation: mover 10s linear infinite;
+    animation-play-state: running;
+}
+
+.pausado {
+    animation-play-state: paused;
+}
+
+@keyframes mover {
+    from {
+        left: 1400px;
+        opacity: 0.9;
+    }
+
+    to {
+        left: -450px;
+        opacity: 1;
+    }
+}
+
+#tuberia1 {
+    left: 10%;
+}
+
+#tuberia2 {
+    left: 35%;
+    animation-delay: 2s !important;
+}
+
+#tuberia3 {
+    left: 60%;
+    animation-delay: 4s !important;
+}
+
+#tuberia4 {
+    left: 85%;
+    animation-delay: 6s !important;
+}
+
+#tuberia5 {
+    left: 95%;
+    animation-delay: 8s !important;
+}
+
+#arribaTub,
+#arribaTub2,
+#arribaTub3,
+#arribaTub4,
+#arribaTub5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: rotate(180deg);
+    filter: hue-rotate(-20deg) brightness(1.2);
+    backface-visibility: hidden;
+    border-radius: 30px;
+}
+
+#youLose {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#bastanteA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 150px;
+    transform: translateY(60px);
+}
+
+#youLose button:hover {
+    transform: scale(1.2);
+}
+
+#thingi {
+    z-index: 1000;
+    transform: scale(1.4);
+    top: 10%;
+
+}
+
+#youLose h2 {
+    font-family: loser;
+    color: white;
+    text-align: center;
+    opacity: 0.8;
+}
+
+#youLose button {
+    font-family: loser;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-size: 2.5em;
+    transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#youLose p {
+    font-family: loser;
+    color: white;
+    text-align: center;
+}
+
+#abajoTub,
+#abajoTub2,
+#abajoTub3,
+#abajoTub4,
+#abajoTub5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    filter: hue-rotate(-20deg) brightness(1.2);
+    border-radius: 30px;
+}
+
+#arribaTub img,
+#arribaTub2 img,
+#arribaTub3 img,
+#arribaTub4 img,
+#abajoTub img,
+#abajoTub2 img,
+#abajoTub3 img,
+#abajoTub4 img {
+    display: block;
+    width: 100%;
+}
+
+
+
+@font-face {
+    font-family: this;
+    src: url(../fonts/MoreSugar-Regular.ttf);
+}
+
+@font-face {
+    font-family: loser;
+    src: url(../fonts/PixelOperatorMono8-Bold.ttf);
+}

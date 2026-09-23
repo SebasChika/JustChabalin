@@ -1,0 +1,181 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    user-select: none;
+    background-image: url(../imagenes/minijuegos/fondoComida.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    overflow: hidden;
+}
+
+#semilla {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 7%;
+    opacity: 0;
+}
+
+.bajarSeed {
+    animation: bajarSeed 2s linear forwards;
+}
+
+@keyframes bajarSeed {
+    from {
+        top: 0%;
+        opacity: 1;
+    }
+
+    to {
+        top: 110%;
+        opacity: 0.6;
+    }
+
+}
+
+#moreMoney {
+    position: absolute;
+    top: 20%;
+    left: -5%;
+    z-index: 22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #393b42;
+    font-family: loser;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.gettinMoney {
+    animation: subirMoney 1s linear forwards;
+}
+
+@keyframes subirMoney {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(-70px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+}
+
+#moreMoney img {
+    width: 30%;
+}
+
+#volver {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(115, 115, 146);
+}
+
+#puntaje {
+    position: absolute;
+    top: -50px;
+    border-radius: 15px;
+    font-size: 5em;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: this;
+    padding: 0px 20px;
+    color: white;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0),
+        -2px -2px 0px rgb(0, 0, 0);
+    transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#kiwi {
+    height: 200px;
+    width: 400px;
+    opacity: 1 !important;
+}
+
+h4 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: this;
+}
+
+#hitBoxKiwi {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(0px);
+    /*-500px y 450px */
+    bottom: 12%;
+    height: 50px;
+    width: 100px;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 15px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#negro {
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    z-index: 999;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.fadeInNegro {
+    animation: fadeIn 3s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+.fadeOutNegro {
+    animation: fadeOut 2s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+@font-face {
+    font-family: this;
+    src: url(../fonts/MoreSugar-Regular.ttf);
+}
+
+@font-face {
+    font-family: loser;
+    src: url(../fonts/PixelOperatorMono8-Bold.ttf);
+}

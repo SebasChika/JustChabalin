@@ -1,0 +1,258 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    user-select: none;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgb(180, 224, 224) 0%, rgb(243, 243, 243) 30%)
+}
+
+#fish {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+}
+
+#puntajeHtml {
+    position: absolute;
+    top: -10%;
+    border-radius: 15px;
+    font-size: 5em;
+    z-index: 99;
+    right: 2%;
+    font-family: this;
+    padding: 0px 20px;
+    color: white;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0),
+        -2px -2px 0px rgb(0, 0, 0);
+}
+
+#info {
+    position: absolute;
+    top: 0;
+    right: 1%;
+    font-family: this;
+}
+
+#fish img {
+    width: 10%;
+    margin: 0;
+    padding: 0;
+}
+
+#hitboxMartin {
+    position: absolute;
+    top: 0%;
+    transform: translateX(550px);
+    /*desde 20 hasta 1000*/
+    width: 7%;
+    height: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    pointer-events: none;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#moreMoney {
+    position: absolute;
+    left: -5%;
+    z-index: 22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #393b42;
+    font-family: loser;
+    opacity: 0;
+    top: 50%;
+    pointer-events: none;
+}
+
+.gettinMoney {
+    animation: subirMoney 1s linear forwards;
+}
+
+@keyframes subirMoney {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(-70px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+}
+
+#moreMoney img {
+    width: 30%;
+}
+
+
+
+#martinPesca {
+    position: absolute;
+    top: 0;
+    right: -190% !important;
+    width: 400%;
+}
+
+#fish1 {
+    border-radius: 150px 150px;
+    display: flex;
+    align-self: flex-start;
+}
+
+#fish2 {
+    border-radius: 150px 150px;
+    display: flex;
+    align-self: flex-start;
+}
+
+#fish3 {
+    border-radius: 150px 150px;
+    display: flex;
+    align-self: flex-start;
+}
+
+.correr1 {
+    animation: correr 5s linear infinite;
+    animation-play-state: running;
+}
+
+.correr2 {
+    animation: correr 4s linear infinite;
+    animation-play-state: running;
+}
+
+.correr3 {
+    animation: correr 2s linear infinite;
+    animation-play-state: running;
+}
+
+.desvanecer {
+    animation-play-state: paused;
+}
+
+@keyframes correr {
+    0% {
+        transform: translateX(0) rotateY(0deg);
+    }
+
+    49% {
+        transform: translateX(calc(100vw - 100%)) rotateY(0deg);
+    }
+
+    50% {
+        transform: translateX(calc(100vw - 100%)) rotateY(180deg);
+    }
+
+    100% {
+        transform: translateX(0) rotateY(180deg);
+    }
+}
+
+#backgroundChabal {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    height: 70%;
+    width: 100%;
+
+    background-image: url("../imagenes/minijuegos/fondoPescador.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}
+
+#volver {
+    position: absolute;
+    top: 0;
+    background-color: rgb(150, 180, 209);
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#volver:hover {
+    padding-right: 20px;
+    z-index: 99;
+}
+
+#puente {
+    position: absolute;
+    top: -30%;
+    z-index: 1;
+    height: 70%;
+    width: 100%;
+
+    background-image: url("../imagenes/minijuegos/puente.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    pointer-events: none;
+}
+
+#negro {
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    z-index: 999;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.fadeInNegro {
+    animation: fadeIn 3s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+.fadeOutNegro {
+    animation: fadeOut 2s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+@font-face {
+    font-family: this;
+    src: url(../fonts/MoreSugar-Regular.ttf);
+}
+
+@font-face {
+    font-family: loser;
+    src: url(../fonts/PixelOperatorMono8-Bold.ttf);
+}

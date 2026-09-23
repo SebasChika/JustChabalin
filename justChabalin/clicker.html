@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagenes/anaIcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/clicker.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker</title>
+</head>
+
+<body>
+    <main>
+        <audio id="soundClicker" src="audio/soundClicker.mp3"></audio>
+        <audio loop id="clickerTheme" src="audio/clickerTheme.mp3"></audio>
+        <audio id="money" src="audio/dollarz.mp3"></audio>
+        <div id="moreMoney"> +20 <img src="imagenes/minijuegos/coin.png"></div>
+        <div id="negro"></div>
+        <div id="extraButtons">
+            <button id="volver"><img src="imagenes/minijuegos/icon2.png"></button>
+        </div>
+        <div id="left">
+            <div id="thisSide">
+                <p id="sumador">+1</p>
+                <h2 id="contador"><img src="imagenes/minijuegos/coin.png">0</h2>
+                <img id="bird" src="imagenes/minijuegos/birdClicker.gif">
+            </div>
+        </div>
+        <div id="right">
+            <div id="rightBar">
+                <h1>Chabal Powers</h1>
+
+                <button id="clickNormal" class="power">
+                    <img src="imagenes/minijuegos/sprite_00.png">
+                    <div class="rightInfo">
+                        <h2>Click Normal</h2>
+                        <p>+1 chabalín por click</p>
+                        <div class="price">
+                            <img class="littCoin" src="imagenes/minijuegos/coin.png">10
+                        </div>
+                    </div>
+                </button>
+
+                <button id="clickAuto" class="power">
+                    <img src="imagenes/minijuegos/sprite_01.png">
+                    <div class="rightInfo">
+                        <h2>Click Auto</h2>
+                        <p>+1 chabalín por segundo</p>
+                        <div class="price">
+                            <img class="littCoin" src="imagenes/minijuegos/coin.png">75
+                        </div>
+                    </div>
+                </button>
+
+                <button id="clickGatuno" class="power">
+                    <img src="imagenes/minijuegos/sprite_02.png">
+                    <div class="rightInfo">
+                        <h2>Click Gatuno</h2>
+                        <p>+5 chabalines por click</p>
+                        <div class="price">
+                            <img class="littCoin" src="imagenes/minijuegos/coin.png">300
+                        </div>
+                    </div>
+                </button>
+
+                <button id="clickGranja" class="power">
+                    <img src="imagenes/minijuegos/sprite_03.png">
+                    <div class="rightInfo">
+                        <h2>Click Granja</h2>
+                        <p>+6 chabalines por segundo</p>
+                        <div class="price">
+                            <img class="littCoin" src="imagenes/minijuegos/coin.png">1200
+                        </div>
+                    </div>
+                </button>
+
+                <button id="clickChad" class="power">
+                    <img src="imagenes/minijuegos/sprite_04.png">
+                    <div class="rightInfo">
+                        <h2>Click Chad</h2>
+                        <p>+100 chabalines por click</p>
+                        <div class="price">
+                            <img class="littCoin" src="imagenes/minijuegos/coin.png">8000
+                        </div>
+                    </div>
+                </button>
+
+                <button id="clickGaraje" class="power">
+                    <img src="imagenes/minijuegos/sprite_05.png">
+                    <div class="rightInfo">
+                        <h2>Click Garaje</h2>
+                        <p>+100 chabalines por segundo</p>
+                        <div class="price">
+                            <img class="littCoin" src="imagenes/minijuegos/coin.png">30000
+                        </div>
+                    </div>
+                </button>
+
+                <button id="clickXXL" class="power">
+                    <img src="imagenes/minijuegos/sprite_06.png">
+                    <div class="rightInfo">
+                        <h2>Click XXL</h2>
+                        <p>+1,000 chabalines por click</p>
+                        <div class="price">
+                            <img class="littCoin" src="imagenes/minijuegos/coin.png">200000
+                        </div>
+                    </div>
+                </button>
+
+                <button id="clickFabrica" class="power">
+                    <img src="imagenes/minijuegos/sprite_07.png">
+                    <div class="rightInfo">
+                        <h2>Click Fábrica</h2>
+                        <p>+1,000 chabalines por segundo</p>
+                        <div class="price">
+                            <img class="littCoin" src="imagenes/minijuegos/coin.png">800000
+                        </div>
+                    </div>
+                </button>
+
+                <button id="clickUwU" class="power">
+                    <img src="imagenes/minijuegos/sprite_08.png">
+                    <div class="rightInfo">
+                        <h2>Click :3</h2>
+                        <p>+5,000 chabalines por click</p>
+                        <div class="price">
+                            <img class="littCoin" src="imagenes/minijuegos/coin.png">3000000
+                        </div>
+                    </div>
+                </button>
+
+                <button id="clickCastillo" class="power">
+                    <img src="imagenes/minijuegos/sprite_09.png">
+                    <div class="rightInfo">
+                        <h2>Click Castillo</h2>
+                        <p>+6,000 chabalines por segundo</p>
+                        <div class="price">
+                            <img class="littCoin" src="imagenes/minijuegos/coin.png">12000000
+                        </div>
+                    </div>
+                </button>
+
+                <button id="clickJojos" class="power">
+                    <img src="imagenes/minijuegos/sprite_10.png">
+                    <div class="rightInfo">
+                        <h2>Click Jojo's</h2>
+                        <p>+100,000 chabalines por click</p>
+                        <div class="price">
+                            <img class="littCoin" src="imagenes/minijuegos/coin.png">100000000
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+    </main>
+    <script src="js/clicker.js"></script>
+</body>
+
+</html>

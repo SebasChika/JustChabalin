@@ -1,0 +1,340 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    user-select: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(ellipse at top, rgb(63, 63, 63) 0%, black 100%);
+}
+
+#left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 70%;
+}
+
+
+
+#right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 30%;
+
+    background-image:
+        radial-gradient(ellipse at top,
+            rgba(148, 143, 143, 0.788) 0%,
+            rgba(46, 44, 44, 0.788) 100%),
+        radial-gradient(circle, rgba(61, 56, 56, 0.2) 2px, transparent 2px),
+        radial-gradient(circle, rgba(61, 56, 56, 0.2) 2px, transparent 2px);
+
+    background-size:
+        100% 100%,
+        24px 24px,
+        24px 24px;
+
+    background-position:
+        center,
+        0 0,
+        12px 12px;
+    padding: 10px;
+}
+
+#rightBar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#rightBar::-webkit-scrollbar {
+    width: 20px;
+    background: rgba(112, 112, 112, 0.637);
+}
+
+
+#rightBar::-webkit-scrollbar-thumb {
+    background: rgba(165, 165, 167, 0.6);
+    border-radius: 10px;
+}
+
+
+#rightBar h1 {
+    font-family: font;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(185, 185, 185, 0.712),
+        -2px -2px 0px rgb(255, 255, 255);
+}
+
+#extraButtons {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#extraButtons button {
+    background-color: rgba(185, 185, 185, 0.712);
+    border-radius: 15px;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+#extraButtons button:hover {
+    background-color: rgba(255, 255, 255, 0.712);
+}
+
+#extraButtons img {
+    height: 50px;
+    width: 50px;
+    filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.562))
+}
+
+.rightInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    background-color: rgba(248, 243, 232, 0.534);
+    border-radius: 15px;
+
+}
+
+.rightInfo h2,
+.rightInfo p{
+    margin: 0;
+}
+
+#rightBar button {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    gap: 10px;
+    font-family: font;
+    background-color: rgba(185, 185, 185, 0.712);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px black;
+    border: none;
+    transition: filter 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#rightBar button:hover {
+    filter: brightness(0.7);
+}
+
+#rightBar h2 {
+    font-size: 1.2em;
+}
+
+#rightBar p {
+    font-size: 1em;
+}
+
+#rightBar img {
+    height: 90px;
+    width: 90px;
+    background-color: rgb(70, 70, 70);
+    border-radius: 15px;
+    filter: drop-shadow(5px 5px 0px rgba(229, 230, 193, 0.74));
+}
+
+.littCoin {
+    background-color: transparent !important;
+    height: 50px !important;
+    width: 50px !important;
+}
+
+#thisSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(-30px) scale(0.75);
+}
+
+#contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: font;
+    font-size: 5em;
+    text-shadow: 2px 2px 0px rgb(255, 255, 255),
+        -2px -2px 0px rgba(139, 139, 139, 0.562);
+    border-bottom: 2px solid rgb(85, 85, 85);
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.055);
+    padding: 0px;
+}
+
+#contador img {
+    height: 100px;
+    width: 100px;
+}
+
+#bird {
+    width: 50%;
+    filter: drop-shadow(10px 10px 0px rgba(0, 0, 0, 0.788));
+}
+
+.bumpp {
+    animation: bump 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+@keyframes bump {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95) rotate(0.5deg);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+#moreMoney {
+    position: absolute;
+    left: -5%;
+    z-index: 22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b3b3b3;
+    font-family: loser;
+    font-size: 3em;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.gettinMoney {
+    animation: subirMoney 1s linear forwards;
+}
+
+@keyframes subirMoney {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(-70px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+}
+
+#moreMoney img {
+    width: 30%;
+}
+
+
+#negro {
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    z-index: 999;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.sumador {
+    position: absolute;
+    left: 60%;
+    bottom: 120px;
+    font-size: 3em;
+    font-family: font;
+    color: gray;
+    text-shadow: 2px 2px 0 white,
+                 -2px -2px 0 rgba(139,139,139,.56);
+    z-index: 3;
+    pointer-events: none;
+    animation: subir 1.2s ease-out forwards;
+}
+
+@keyframes subir {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+.fadeInNegro {
+    animation: fadeIn 3s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+.fadeOutNegro {
+    animation: fadeOut 2s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+@font-face {
+    font-family: font;
+    src: url(../fonts/MoreSugar-Regular.ttf);
+}
+
+@font-face {
+    font-family: loser;
+    src: url(../fonts/PixelOperatorMono8-Bold.ttf);
+}

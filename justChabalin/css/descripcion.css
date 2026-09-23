@@ -1,0 +1,379 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    font-family: all;
+    user-select: none;
+    background: linear-gradient(245deg, transparent 60%, rgba(0, 0, 0, 0.753) 100%),
+        linear-gradient(45deg, transparent 60%, rgba(255, 255, 255, 0.753) 100%);
+    overflow-x: hidden;
+    background-size: cover;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    filter: blur(1px);
+    background: url('../imagenes/description/background.png')center/cover no-repeat;
+    z-index: -1;
+}
+
+header {
+    background-color: #25211f;
+    padding: 30px 0;
+}
+
+#right {
+    position: absolute;
+    top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#descripcion {
+    margin-top: 40px;
+}
+
+#right svg {
+    height: 30px;
+    width: 30px;
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#favorito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #3b3837;
+    font-family: all;
+    color: #ccb9a2;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #1d1a18;
+    transition: fill .3s ease;
+}
+
+#favSvg{
+    fill: rgb(233, 230, 221);
+    transition: fill .3s ease;
+}
+
+#favorito:hover svg {
+    transform: rotate(-15deg);
+}
+
+
+
+.btnUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #3b3837;
+    font-family: all;
+    color: #a88f70;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #25211f;
+}
+
+.btnUp:hover svg {
+    transform: rotate(-15deg);
+}
+
+#derecha {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    justify-items: center;
+    align-items: center;
+    transform: translateX(15px);
+}
+
+#derecha svg {
+    height: 30px;
+    width: 30px;
+    transform: translateY(5px);
+    opacity: 0.7;
+}
+
+#derecha p {
+    margin: 5px;
+}
+
+#izquierda {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    border-right: 3px dashed #3b3837cc;
+}
+
+#informacion {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 35%;
+    border: 5px solid #3b3837;
+    border-radius: 15px;
+    height: 45%;
+    background: linear-gradient(315deg, #ffffff 0%, #edd7bd 100%);
+    padding: 5px;
+}
+
+#mas {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1a19;
+    width: 80%;
+    top: -20px;
+    left: 0;
+    border-radius: 15px;
+}
+
+#mas img {
+    filter: invert(1) !important;
+    width: 80%;
+    opacity: 0.8;
+}
+
+#rareza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    background: radial-gradient(circle, #a3b451 0%, #648c36 100%);
+    border: none;
+    border-radius: 15px;
+    font-family: all;
+    font-size: 1.8em;
+    color: rgba(0, 0, 0, 0.788);
+    margin-top: auto;
+}
+
+#izquierda svg {
+    height: 40px;
+    width: 40px;
+    fill: black;
+    animation: rotar 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-50deg);
+    }
+
+}
+
+#informacion p {
+    width: 80%;
+    opacity: 0.7;
+}
+
+#encabezado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 44%;
+    animation: SlideIn 3s cubic-bezier(0.29, 0.875, 0.965, 1) forwards;
+}
+
+@keyframes SlideIn {
+    from {
+        opacity: 0.4;
+        left: -150px;
+        filter: drop-shadow(10px 10px black);
+    }
+
+    to {
+        opacity: 1;
+        left: 0;
+        filter: drop-shadow(0px 5px black);
+
+    }
+
+}
+
+#name {
+    opacity: 0.6;
+    width: 60% !important;
+}
+
+#encabezado p {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#encabezado img {
+    display: block;
+    width: 100%;
+}
+
+#encabezado .contenido {
+    position: absolute;
+    inset: 0;
+    font-family: all;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 25px 40px;
+    transform: translateX(-30px);
+}
+
+#Dancing {
+    position: absolute;
+    bottom: 0;
+    right: -2%;
+    width: 60%;
+    z-index: 8;
+    pointer-events: none;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.767));
+}
+
+.up {
+    animation: up 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.upGei {
+    animation: upGei 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.upReal {
+    animation: upReal 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes upGei {
+    from {
+        transform: skew(50deg) scale(0.6);
+        bottom: -180px;
+        right: -50px;
+
+    }
+
+    to {
+        transform: skew(0deg) scale(0.7);
+        bottom: -120px;
+        right: -2px;
+    }
+}
+
+@keyframes upReal {
+    from {
+        transform: skew(50deg) scale(0.6);
+        bottom: -160px;
+        right: -50px;
+
+    }
+
+    to {
+        transform: skew(0deg) scale(0.85);
+        bottom: -50px;
+        right: -2px;
+    }
+
+}
+
+@keyframes up {
+    from {
+        transform: skew(50deg) scale(0.8);
+        bottom: -160px;
+        right: -50px;
+
+    }
+
+    to {
+        transform: skew(0deg) scale(1);
+        bottom: 0;
+        right: -2px;
+    }
+
+}
+
+#circle {
+    position: absolute;
+    right: -35%;
+    bottom: -60%;
+
+    width: 140%;
+    height: 130%;
+
+    background: #726453;
+    opacity: 0.4;
+    border: 3px dashed #373737;
+
+
+    border-radius: 50%;
+    transform: rotate(-15deg);
+}
+
+
+#negro {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 999;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.fadeInNegro {
+    animation: fadeIn 3s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+.fadeOutNegro {
+    animation: fadeOut 2s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+
+@font-face {
+    font-family: all;
+    src: url('../fonts/MoreSugar-Regular.ttf');
+}

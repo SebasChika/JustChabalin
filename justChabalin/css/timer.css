@@ -1,0 +1,170 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../imagenes/minijuegos/backgroundTimer.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    overflow: hidden;
+    min-height: 100vh;
+    user-select: none;
+}
+
+#buttonRed {
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    left: 10%;
+}
+
+#timer {
+    position: relative;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(30px);
+    display: flex;
+    justify-content: flex-end;
+}
+
+#numeros {
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    display: flex;
+    opacity: 0.9;
+}
+
+#try {
+    margin-left: 15px;
+    margin-top: 50px;
+    object-fit: contain;
+    transform: scale(1.1);
+}
+
+#some {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 35%;
+    transform: translateX(5px);
+}
+
+.number {
+    width: 60px !important;
+    height: 80px !important;
+    object-fit: contain;
+    filter: brightness(0);
+    opacity: 0.8;
+}
+
+#moreMoney {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    z-index: 22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #393b42;
+    font-family: loser;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.gettinMoney {
+    animation: subirMoney 1s linear forwards;
+}
+
+@keyframes subirMoney {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(-70px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+}
+
+#moreMoney img {
+    width: 30%;
+}
+
+
+#numeros img {
+    height: 200px !important;
+    width: 150px !important;
+    height: auto;
+    object-fit: contain;
+}
+
+
+#timer img {
+    height: 70%;
+    width: 70%;
+}
+
+#volver {
+    position: absolute;
+    padding: 10px;
+    background-color: rgb(99, 99, 99);
+    border-bottom-right-radius: 15px;
+
+}
+
+#negro {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fadeInNegro {
+    animation: fadeIn 3s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+.fadeOutNegro {
+    animation: fadeOut 2s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+@font-face {
+    font-family: loser;
+    src: url(../fonts/PixelOperatorMono8-Bold.ttf);
+}

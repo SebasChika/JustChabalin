@@ -1,0 +1,146 @@
+ ----------------------------------------------------------
+| Nombre Real               |  Nombre nosotros             |
+| --------------------------|----------------------------- | 
+| 1.- Torcaza               | Chocolatín                   |
+| 2.- Paloma                | Clásico                      |
+| 3.- Pollo                 | Pio                          |
+| 4.- Sirirí                | Bolita                       |
+| 5.- Canario costeño       | Manguito                     |
+| 6.- Azulejo común         | Azulin                       |
+| 7.- Bienteveo común       | Kiwii                        |
+| 8.- María mulata          | Mulata                       |
+| 9.- Gallinazo             | Emo                          |
+| 10.- Pato                 | Quak                         |
+| 11.- Pyrocephalus rubinus | Fueguin                      |
+| 12.- Colibrí chillón      | Colibrí                      |
+| 13.- Martín pescador      | Pescador                     |
+| 14.- Kramer               | Parrokil                     |
+| 15.- Arrendajo azul       | Mordecai                     |
+| 16.- Gallina              | Dinosaurio                   |
+| 17.- Cuervo               | Gotico                       |
+| 18.- Paloma blanca        | Shiny                        |
+| 19.- Flamenco rosa        | Gei                          |
+| 20.- Pavo real            | Real                         |
+| 21.- Cacatúa galah        | Rosito                       |
+| 22.- Cacatúa              | Cantante                     |
+| 23.- Abubilla             | Cucu                         |
+| 24.-Bubo scandiacus       | buhinwai                     |
+| 25.-chivito de páramo     | Gomina                       |
+| 26.-DAMN BIRD             | DAMN                         |
+| 27.-pingüino rey marrón   | Tranquilo                    |
+| 28.- Red (Angry Birds)    | Red                          |
+| 29.- Loro rojo(Minecraft) | Cubico                       |
+| 30.- Pink Robin           | Ana                          |
+|----------------------------------------------------------|
+
+------------------------------------
+| Nº | Comida                      |
+|----|-----------------------------|
+| 1. | Trigo                       |
+| 2. | Maíz                        |
+| 3. | Gusanos                     |
+| 4. | Saltamontes                 |
+| 5. | Semillas de pasto           |
+| 6. | Uva                         |
+| 7. | Mariposas                   | 
+| 8. | Mango                       |
+| 9. | Carroña                     |
+|10. | Lenteja de agua             |
+|11. | Moscas                      |
+|12. | Néctar                      |
+|13. | Peces                       |
+|14. | Semillas de girasol         |
+|15. | Bellotas                    |
+|16. | Hormigas                    |
+|17. | Huevos de otras aves        |
+|18. | Arroz                       |
+|19. | Camarones                   |
+|20. | Serpientes pequeñas         |
+|21. | Semillas de eucalipto       |
+|22. | Nueces                      |
+|23. | Escorpiones                 |
+|24. | Ratones                     |
+|25. | Escarabajos                 |
+|26. | Papitas                     |
+|27. | Calamares                   |
+|28. | Cerdos verdes               |
+|29. | Galleta                     |
+|30. | Moño                        |
+------------------------------------
+--------------------------------------------------------------------------------------------------
+| Carnada               | Puede atraer                                                            |
+| --------------------- | ----------------------------------------------------------------------- |
+| Trigo                 | Torcaza, Paloma, Pollo, Paloma blanca                                   |
+| Maíz                  | Paloma, Torcaza, Pollo, Gallina                                         |
+| Gusanos               | Pollo, Sirirí, Gallina, Bienteveo común                                 |
+| Saltamontes           | Sirirí, Canario costeño, Bienteveo común, Pyrocephalus rubinus          |
+| Semillas de pasto     | Canario costeño, Torcaza, Paloma, Kramer                                |
+| Uva                   | Azulejo común, María mulata, Cacatúa, Arrendajo azul                    |
+| Mariposas             | Bienteveo común, Colibrí chillón, Sirirí, Pyrocephalus rubinus          |
+| Mango                 | María mulata, Azulejo común, Cacatúa, Loro rojo (Minecraft)             |
+| Carroña               | Gallinazo, Cuervo, Pavo real, Red (Angry Birds)                         |
+| Lenteja de agua       | Pato, Flamenco rosa, Martín pescador, Paloma blanca                     |
+| Moscas                | Pyrocephalus rubinus, Bienteveo común, Sirirí, Colibrí chillón          |
+| Néctar                | Colibrí chillón, Canario costeño, Pyrocephalus rubinus, Bienteveo común |
+| Peces                 | Martín pescador, Pato, Flamenco rosa, Cuervo                            |
+| Semillas de girasol   | Kramer, Cacatúa, Cacatúa galah, Arrendajo azul                          |
+| Bellotas              | Arrendajo azul, Kramer, Cacatúa, Cuervo                                 |
+| Hormigas              | Gallina, Pollo, Sirirí, Bienteveo común                                 |
+| Huevos de otras aves  | Cuervo, Gallinazo, Martín pescador, Pavo real                           |
+| Arroz                 | Paloma blanca, Torcaza, Paloma, Pato                                    |
+| Camarones             | Flamenco rosa, Pato, Martín pescador, Gallinazo                         |
+| Serpientes pequeñas   | Pavo real, Cuervo, Gallinazo, Martín pescador                           |
+| Semillas de eucalipto | Cacatúa galah, Cacatúa, Kramer, Arrendajo azul                          |
+| Nueces                | Cacatúa, Cacatúa galah, Arrendajo azul, Kramer                          |
+| Escorpiones           | Abubilla, Pollo, Sirirí, Gallina, Bienteveo común                       |
+| Ratones               | Bubo scandiacus, Cuervo, Gallinazo, Pavo real                           |
+| Escarabajos           | Chivito de páramo, Sirirí, Bienteveo común, Abubilla                    |
+| papitas               | DAMN BIRD, Loro rojo (Minecraft), Cacatúa, Kramer                       |
+| Calamares             | Pingüino rey marrón, Martín pescador, Pato, Cuervo                      | 
+| Cerdos verdes         | Red (Angry Birds), Cuervo, Gallinazo, Pavo real                         |
+| Galleta               | Loro rojo (Minecraft), Cacatúa, Kramer, Arrendajo azul                  |
+| **Moño**              | **Pink Robin, Pavo real, Cacatúa galah, Red (Angry Birds)**             |
+---------------------------------------------------------------------------------------------------
+| Nº  | Logro                   | Descripción                                     |
+| --- | ----------------------- | ----------------------------------------------- |
+| 1.  | **Bienvenido, yo**      | Entra al menú.                                  | - Menú
+| 2.  | ¡Hola, Chocolatín!      | Descubre tu primer Chabalín.                    | - RinconChabal
+| 3.  | Coleccionista           | Descubre 10 especies.                           | - RinconChabal
+| 4.  | Mitad del álbum         | Descubre 15 especies.                           | - RinconChabal
+| 5.  | Ornitólogo              | Completa toda la Chabalpedia.                   | - RinconChabal
+| 6.  | Cliente nuevo           | Compra tu primera carnada.                      | - TiendaChabal
+| 7.  | Comprador compulsivo    | Compra las 30 carnadas.                         | - TiendaChabal
+| 8.  | Gourmet                 | Usa todas las carnadas al menos una vez.        | - RinconChabal
+| 9.  | Chef Chabalín           | Compra 100 carnadas.                            | - TiendaChabal
+| 10. | Ninguno Como tú         | Ten tu primer chabalin favorito                 | - descripcion
+| 11. | Se pone interesant      | Consigue dinero por primera vez                 | - Minijuegos
+| 12. | Minijuegos??            | Entra a los minijuegos                          | - Minijuegos
+| 13. | Fashion Bird            | Atrae un ave usando un Moño.                    | - RinconChabal
+| 14. | ¿Quién come papitas?    | Atrae a DAMN BIRD.                              | - RinconChabal
+| 15. | Minecraft confirmado    | Descubre a Cubico.                              | - RinconChabal
+| 16. | No era un pájaro...     | Descubre a Red.                                 | - RinconChabal
+| 17. | La elegida              | Descubre a Ana.                                 | - RinconChabal
+| 18. | Sin desperdiciar        | Captura un ave con la primera carnada comprada. | - RinconChabal
+| 19. | Suerte de principiante  | Consigue tu primer legendaria.                  | - RinconChabal
+| 20. | Especialista            | Captura 20 veces la misma especie.              | - RinconChabal
+| 21. | Primer ahorro           | Consigue 100 monedas.                           | - Minijuegos
+| 22. | Millonario              | Consigue 10.000 monedas.                        | - Minijuegos
+| 23. | Magnate del D1          | Compra toda la tienda.                          | - TiendaChabal
+| 24. | Brillitos               | Descubre a Shiny.                               | - RinconChabal
+| 25. | Realeza                 | Descubre a Real.                                | - RinconChabal
+| 26. | El Gótico               | Descubre a Gotico.                              | - RinconChabal
+| 27. | Rosado                  | Descubre a Rosito y Ana.                        | - RinconChabal
+| 28. | Amante de las palomas   | Descubre Chocolatín, Clásico y Shiny.           | - RinconChabal
+| 29. | Equipo oscuro           | Descubre Emo y Gotico.                          | - RinconChabal
+| 30. | Las acuáticas           | Descubre Quak, Pescador y Tranquilo.            | - RinconChabal
+| 31. | Las exóticas            | Descubre Shy, Rosito, Cantante y Buhinwai.      | - RinconChabal
+| 32. | El elegido              | Consigue todos los logros.                      | - Any
+| 33. | 100 % Chabalín          | Descubre las 30 especies del juego.             | - RinconChabal 
+----------------------------------------------------------------------------------- 
+
+    top: 40%; // 60% // 80%
+    transform: translateX(550px) rotate(-90deg);
+
+
+
+

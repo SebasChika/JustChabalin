@@ -1,0 +1,173 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #7b8090;
+    overflow: hidden;
+    user-select: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#moreMoney {
+    position: absolute;
+    left: -5%;
+    z-index: 22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #393b42;
+    font-family: loser;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.gettinMoney {
+    animation: subirMoney 1s linear forwards;
+}
+
+@keyframes subirMoney {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(-70px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+}
+
+#moreMoney img {
+    width: 30%;
+}
+
+#cuadricula {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    transform: scale(0.9);
+    perspective: 1000px;
+    gap: 10px;
+    pointer-events: none;
+}
+
+#cuadricula img {
+    width: 250px;
+    pointer-events: all !important;
+    padding: 0;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.rotarIn {
+    animation: rotarImg 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+.devolver {
+    animation: rotarImgVolver 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+@keyframes rotarImgVolver {
+    from {
+        transform: rotateY(180deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+
+}
+
+@keyframes rotarImg {
+    from {
+        transform: rotateY(0deg);
+
+    }
+
+    to {
+        transform: rotateY(180deg);
+    }
+
+}
+
+#cuadricula img:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(5px 2px 0px #575a64);
+}
+
+#volver {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5px;
+    background-color: #575a64;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#volver:hover img {
+    transform: scale(1.05);
+}
+
+#volver img {
+    opacity: 0.6;
+}
+
+#negro {
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    z-index: 999;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.fadeInNegro {
+    animation: fadeIn 3s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+.fadeOutNegro {
+    animation: fadeOut 2s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+@font-face {
+    font-family: loser;
+    src: url(../fonts/PixelOperatorMono8-Bold.ttf);
+}

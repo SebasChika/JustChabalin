@@ -1,0 +1,288 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(180deg, #e8a389 0%, #ffd998 50%, #d8cfc9 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#film {
+    position: fixed;
+    inset: 0;
+
+    background-image: url('../imagenes/menu/texture.png');
+
+    background-size: cover;
+    background-position: center;
+
+    opacity: .7;
+
+    pointer-events: none;
+    z-index: 899;
+}
+
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    opacity: 0.6;
+    z-index: 5;
+}
+
+#bird {
+    position: absolute;
+    width: 100%;
+
+}
+
+@keyframes volar {
+    from {
+        left: -50%;
+    }
+
+    to {
+        left: 139%;
+    }
+
+}
+
+.volarBird {
+    animation: volar 15s linear forwards;
+}
+
+#pajaro {
+    position: absolute;
+    width: 400px;
+    left: -50%;
+    opacity: 0.6;
+}
+
+#sun {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-150px) scale(1.3);
+    filter: blur(5px) drop-shadow(0 0 30px white);
+    width: 100%;
+    height: 100%;
+}
+
+#libroChabal {
+    position: absolute;
+    bottom: 60px;
+    left: 25%;
+    transform: translateX(-25%);
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#miniGames{
+     position: absolute;
+    bottom: -1px;
+    left: 35%;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#miniGames:hover{
+    transform: translateX(-12%) rotate(5deg) scale(1.02);
+    filter: brightness(1.2) drop-shadow(-5px 5px 0px rgba(0, 0, 0, 0.808));
+}
+
+#libroChabal:hover {
+    transform: translateX(-32%) scale(1.02);
+    filter: brightness(1.2) drop-shadow(-5px 5px 0px rgba(0, 0, 0, 0.808));
+
+}
+
+#rincon {
+    position: absolute;
+    bottom: 60px;
+    right: 25%;
+    transform: translateX(-100%) scale(1.4);
+    z-index: 0;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#rincon:hover {
+    transform: translateX(-92%) scale(1.42);
+    filter: brightness(1.2) drop-shadow(2px -2px 0px rgba(0, 0, 0, 0.315));
+
+}
+
+#llave{
+     position: absolute;
+    bottom: -105px;
+    right: 15%;
+    transform: translateX(-63%) scale(0.2) rotate(-20deg);
+    z-index: 0;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#llave:hover {
+    transform: translateX(-62%) scale(0.22) rotate(-10deg);
+    filter: brightness(1.2) drop-shadow(5px -5px 0px rgba(0, 0, 0, 0.315));
+
+}
+
+#nosotros {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#UsImg {
+    position: absolute;
+    z-index: 9;
+    transform: scale(1.3) translateY(50px);
+    filter: drop-shadow(50px 130px 0px rgba(0, 0, 0, 0.445));
+    pointer-events: none;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+#pasto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#past {
+    width: 120%;
+}
+
+#negro {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fadeInNegro {
+    animation: fadeIn 3s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+.fadeOutNegro {
+    animation: fadeOut 2s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+#archivement {
+    position: absolute;
+    right: -55%;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #222222;
+    border: 5px solid #575757;
+    width: 50%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 5px 5px 0px rgb(0, 0, 0),
+        -5px -5px 0px black;
+    pointer-events: none;
+
+}
+
+.logro {
+    animation: inLogro 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.logroOut {
+    animation: OutLogro 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+@keyframes OutLogro {
+    from {
+        right: -5%;
+    }
+
+    to {
+        right: -50%;
+        opacity: 0;
+    }
+
+}
+
+
+@keyframes inLogro {
+    from {
+        right: -50%;
+    }
+
+    to {
+        right: -5%;
+    }
+
+}
+
+#archivement img {
+    border-radius: 20%;
+    width: 15%;
+}
+
+#derecha {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#textoLogro {
+    color: #f8ff3b !important;
+}
+
+#derecha h2 {
+    letter-spacing: 2px;
+    font-family: minecra;
+    text-align: left;
+    margin: 0px;
+    color: white;
+}
+
+@font-face {
+    font-family: minecra;
+    src: url(../fonts/Minecraft.ttf);
+}

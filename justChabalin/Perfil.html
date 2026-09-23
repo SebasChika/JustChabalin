@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagenes/anaIcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/perfil.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfil</title>
+</head>
+
+<body>
+    <div id="negro"></div>
+    <header>
+        <img id="pasto" src="imagenes/pastooo.png">
+        <img id="fotoPerfil" src="imagenes/chabalinPedia/chabalinAnimation/25.gif">
+        <div id="info">
+            <h1>Ana sofia</h1>
+            <p>cazachabalines</p>
+            <h2 id="descripcion">"Suelo llevar un chabalin siempre bajo la manga"</h2>
+        </div>
+        <div id="right">
+            <label for="favoritos">chabalines favoritos:</label>
+            <div id="favoritos">
+                <div id="añadir">+</div>
+                <img src="imagenes/chabalinPedia/chabalinPerfils/19.png">
+                <img src="imagenes/chabalinPedia/chabalinPerfils/23.png">
+                <img src="imagenes/chabalinPedia/chabalinPerfils/22.png">
+                <img src="imagenes/chabalinPedia/chabalinPerfils/21.png">
+            </div>
+            <label for="carnadaFav">carnada favorita:</label>
+            <div id="carnadaFav">
+                <img id="cambiarImgCarnada" src="imagenes/tienda/l0_sprite_16.png">
+                <div id="cantidad">usado 23 veces</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="volver"><img src="imagenes/chabalinPedia/volver.png"></div>
+        <div id="left">
+            <div id="up">
+                <div id="preciso">
+                    <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                        class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <circle fill="#DD2E44" cx="18" cy="18" r="18"></circle>
+                            <circle fill="#FFF" cx="18" cy="18" r="13.5"></circle>
+                            <circle fill="#DD2E44" cx="18" cy="18" r="10"></circle>
+                            <circle fill="#FFF" cx="18" cy="18" r="6"></circle>
+                            <circle fill="#DD2E44" cx="18" cy="18" r="3"></circle>
+                            <path opacity=".2"
+                                d="M18.24 18.282l13.144 11.754s-2.647 3.376-7.89 5.109L17.579 18.42l.661-.138z"
+                                fill="#000000"></path>
+                            <path fill="#FFAC33"
+                                d="M18.294 19a.994.994 0 0 1-.704-1.699l.563-.563a.995.995 0 0 1 1.408 1.407l-.564.563a.987.987 0 0 1-.703.292z">
+                            </path>
+                            <path fill="#55ACEE"
+                                d="M24.016 6.981c-.403 2.079 0 4.691 0 4.691l7.054-7.388c.291-1.454-.528-3.932-1.718-4.238c-1.19-.306-4.079.803-5.336 6.935zm5.003 5.003c-2.079.403-4.691 0-4.691 0l7.388-7.054c1.454-.291 3.932.528 4.238 1.718c.306 1.19-.803 4.079-6.935 5.336z">
+                            </path>
+                            <path fill="#3A87C2"
+                                d="M32.798 4.485L21.176 17.587c-.362.362-1.673.882-2.51.046c-.836-.836-.419-2.08-.057-2.443L31.815 3.501s.676-.635 1.159-.152s-.176 1.136-.176 1.136z">
+                            </path>
+                        </g>
+                    </svg>
+                    <p>Precision: 38%</p>
+                </div>
+                <div id="moni">
+                    <svg height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 491.52 491.52" xml:space="preserve"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <circle style="fill:#DC8744;" cx="245.76" cy="245.76" r="245.76"></circle>
+                            <path style="fill:#F6C358;"
+                                d="M245.757,446.838c-110.875,0-201.076-90.205-201.076-201.076 c0-110.871,90.201-201.076,201.076-201.076c110.876,0,201.076,90.206,201.076,201.076 C446.834,356.634,356.634,446.838,245.757,446.838z">
+                            </path>
+                            <path style="fill:#DC8744;"
+                                d="M239.204,369.291v-21.755c-27.223-2.789-51.658-13.605-73.315-32.498l21.755-25.925 c16.697,14.503,33.88,23.16,51.561,25.925v-57.817c-22.458-5.36-38.889-12.393-49.317-21.148 c-10.428-8.731-15.654-21.706-15.654-38.901c0-17.171,6.014-31.237,18.032-42.15c12.016-10.938,27.672-16.904,46.94-17.898v-14.89 h19.074v15.206c21.851,1.576,42.515,9.046,61.989,22.336l-19.378,27.429c-13.108-9.337-27.32-15.108-42.611-17.292v56.023h0.897 c22.846,5.36,39.628,12.636,50.36,21.755c10.731,9.142,16.091,22.409,16.091,39.797c0,17.389-6.16,31.528-18.48,42.466 c-12.32,10.914-28.606,16.88-48.869,17.874v21.463H239.204z M218.189,176.922c-5.056,4.462-7.591,10.04-7.591,16.686 c0,6.669,1.976,11.907,5.954,15.788c3.978,3.88,11.519,7.615,22.652,11.181v-51.56C230.266,169.817,223.258,172.46,218.189,176.922z M280.93,307.593c5.553-4.56,8.342-10.332,8.342-17.293c0-6.936-2.195-12.465-6.56-16.539c-4.365-4.05-12.514-7.882-24.434-11.472 v53.646C267.809,314.941,275.364,312.177,280.93,307.593z">
+                            </path>
+                        </g>
+                    </svg>
+                    <p id="dineroHTML">12.492</p>
+                </div>
+            </div>
+            <h1 id="my">Mi colección</h1>
+            <div id="cuadricula">
+                <h1></h1>
+                <h1>CHABALINES</h1>
+                <h1></h1>
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#001</p>
+                        <div id="rareza"></div>
+                    </div>
+                    <img id="bird1" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/1.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>chabalin
+                        chocolatin
+                    </h2>
+                </div>
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#002</p>
+                        <div id="rareza"></div>
+                    </div>
+                    <img id="bird2" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/2.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#003</p>
+                        <div id="rareza"></div>
+                    </div>
+                    <img id="bird3" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/3.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#004</p>
+                        <div id="rareza"></div>
+                    </div>
+                    <img id="bird4" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/4.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#005</p>
+                        <div id="rareza"></div>
+                    </div>
+                    <img id="bird5" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/5.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#006</p>
+                        <div id="rareza2"></div>
+                    </div>
+                    <img id="bird6" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/6.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#007</p>
+                        <div id="rareza2"></div>
+                    </div>
+                    <img id="bird7" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/7.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#008</p>
+                        <div id="rareza2"></div>
+                    </div>
+                    <img id="bird8" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/8.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#009</p>
+                        <div id="rareza2"></div>
+                    </div>
+                    <img id="bird9" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/9.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#010</p>
+                        <div id="rareza2"></div>
+                    </div>
+                    <img id="bird10" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/10.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#011</p>
+                        <div id="rareza3"></div>
+                    </div>
+                    <img id="bird11" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/11.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#012</p>
+                        <div id="rareza3"></div>
+                    </div>
+                    <img id="bird12" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/12.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#013</p>
+                        <div id="rareza3"></div>
+                    </div>
+                    <img id="bird13" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/13.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#014</p>
+                        <div id="rareza3"></div>
+                    </div>
+                    <img id="bird14" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/14.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#015</p>
+                        <div id="rareza3"></div>
+                    </div>
+                    <img id="bird15" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/15.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#016</p>
+                        <div id="rareza3"></div>
+                    </div>
+                    <img id="bird16" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/16.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#017</p>
+                        <div id="rareza3"></div>
+                    </div>
+                    <img id="bird17" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/17.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#018</p>
+                        <div id="rareza4"></div>
+                    </div>
+                    <img id="bird18" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/18.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#019</p>
+                        <div id="rareza4"></div>
+                    </div>
+                    <img id="bird19" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/19.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#020</p>
+                        <div id="rareza4"></div>
+                    </div>
+                    <img id="bird20" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/20.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#021</p>
+                        <div id="rareza4"></div>
+                    </div>
+                    <img id="bird21" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/21.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#022</p>
+                        <div id="rareza4"></div>
+                    </div>
+                    <img id="bird22" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/22.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#023</p>
+                        <div id="rareza4"></div>
+                    </div>
+                    <img id="bird23" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/23.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#024</p>
+                        <div id="rareza4"></div>
+                    </div>
+                    <img id="bird24" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/24.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#025</p>
+                        <div id="rareza4"></div>
+                    </div>
+                    <img id="bird25" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/25.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#026</p>
+                        <div id="rareza4"></div>
+                    </div>
+                    <img id="bird26" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/26.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#027</p>
+                        <div id="rareza4"></div>
+                    </div>
+                    <img id="bird27" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/27.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#028</p>
+                        <div id="rareza4"></div>
+                    </div>
+                    <img id="bird28" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/28.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#029</p>
+                        <div id="rareza4"></div>
+                    </div>
+                    <img id="bird29" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/29.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+                <div class="tarjeta">
+                    <div id="estadisticas">
+                        <p>#030</p>
+                        <div id="rareza5"></div>
+                    </div>
+                    <img id="bird30" class="bird" src="imagenes/chabalinPedia/chabalinPerfils/30.png">
+                    <img src="imagenes/chabalinPedia/backT.png">
+                    <h2>desconocido
+                        ??
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+        <div id="right2">
+            <div id="totalBarra">
+                <label id="labelProgreso" for="barraProgreso">progreso: 0/30 chabalines</label>
+                <div id="barraProgreso">
+                    <div id="progreso"></div>
+                </div>
+            </div>
+    </main>
+
+    <script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script>
+    <script src="js/perfil.js"></script>
+</body>
+
+</html>

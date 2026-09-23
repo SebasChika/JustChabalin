@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagenes/anaIcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/flappy.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flappyShabal</title>
+</head>
+
+<body>
+    <main>
+        <audio id="lesgo" src="audio/confirmar.mp3"></audio>
+        <audio id="beep" src="audio/beep.mp3"></audio>
+        <audio id="gameOut" src="audio/gameOver.mp3"></audio>
+        <audio id="chocado" src="audio/chocado.mp3"></audio>
+        <audio id="point" src="audio/point.mp3"></audio>
+        <audio id="saltito" src="audio/jump.mp3"></audio>
+        <audio loop id="playing" src="audio/flappyAna.mp3"></audio>
+        <img id="clickHere" src="imagenes/minijuegos/clikHere.png">
+        <div id="fondo"></div>
+        <div id="youLose">
+            <img id="thingi" src="imagenes/minijuegos/gameover.png">
+            <p id="textAparecer"></p>
+            <h2 id="puntajeHtml">puntaje:</h2>
+            <div id="bastanteA">
+                <button id="rendirse">Rendirse</button>
+                <button id="continuar">Continuar</button>
+            </div>
+        </div>
+
+        <div id="negro"></div>
+        <div id="contador">0</div>
+        <div id="pasto"></div>
+        <div src="imagenes/minijuegos/anaIcon.png" id="jugador">
+            <img id="icon" src="imagenes/minijuegos/anaIcon.png">
+        </div>
+        <div id="escenario">
+            <div id="tuberia1" class="tuber">
+                <div class="bad" id="arribaTub">
+                    <img id="head" src="imagenes/minijuegos/cabeza.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+                </div>
+                <div class="bad" id="abajoTub">
+                    <img id="head" src="imagenes/minijuegos/cabeza.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+                </div>
+            </div>
+            <div id="tuberia2" class="tuber">
+                <div class="bad" id="arribaTub2">
+                    <img id="head" src="imagenes/minijuegos/cabeza.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+
+                </div>
+                <div class="bad" id="abajoTub2">
+                    <img id="head" src="imagenes/minijuegos/cabeza.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+
+                </div>
+            </div>
+            <div id="tuberia3" class="tuber">
+                <div class="bad" id="arribaTub3">
+                    <img id="head" src="imagenes/minijuegos/cabeza.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+
+                </div>
+                <div class="bad" id="abajoTub3">
+                    <img id="head" src="imagenes/minijuegos/cabeza.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+                </div>
+            </div>
+            <div id="tuberia4" class="tuber">
+                <div class="bad" id="arribaTub4">
+                    <img id="head" src="imagenes/minijuegos/cabeza.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+
+                </div>
+                <div class="bad" id="abajoTub4">
+                    <img id="head" src="imagenes/minijuegos/cabeza.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+                </div>
+            </div>
+
+            <div id="tuberia5" class="tuber">
+                <div class="bad" id="arribaTub5">
+                    <img id="head" src="imagenes/minijuegos/cabeza.png">
+
+                </div>
+                <div class="bad" id="abajoTub5">
+                    <img id="head" src="imagenes/minijuegos/cabeza.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+                    <img src="imagenes/minijuegos/cuerpo.png">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/flappy.js"></script>
+</body>
+
+</html>

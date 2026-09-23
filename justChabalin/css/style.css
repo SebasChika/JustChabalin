@@ -1,0 +1,446 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    background:
+
+        /* brillo superior */
+        radial-gradient(circle at 50% -10%,
+            rgba(255, 255, 255, .7) 0%,
+            rgba(255, 255, 255, .2) 25%,
+            transparent 55%),
+
+        /* manchas de luz */
+        radial-gradient(circle at 10% 30%,
+            rgba(255, 245, 220, .35) 0%,
+            transparent 35%),
+
+        radial-gradient(circle at 90% 20%,
+            rgba(255, 255, 255, .25) 0%,
+            transparent 30%),
+
+        /* sombra inferior */
+        radial-gradient(ellipse at bottom,
+            rgba(0, 0, 0, .12) 0%,
+            transparent 60%),
+
+        /* textura de papel */
+        repeating-linear-gradient(90deg,
+            rgba(255, 255, 255, .015) 0px,
+            rgba(255, 255, 255, .015) 1px,
+            transparent 1px,
+            transparent 4px),
+
+        /* scanlines */
+        repeating-linear-gradient(0deg,
+            rgba(0, 0, 0, .015) 0px,
+            rgba(0, 0, 0, .015) 2px,
+            transparent 2px,
+            transparent 8px),
+
+        /* degradado principal */
+        linear-gradient(180deg,
+            #f8eee2 0%,
+            #ead8c2 45%,
+            #d3b89e 100%);
+
+    height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        repeating-radial-gradient(circle,
+            rgba(0, 0, 0, .02) 0px,
+            rgba(0, 0, 0, .02) 1px,
+            transparent 1px,
+            transparent 3px);
+
+    opacity: .35;
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        radial-gradient(ellipse at center,
+            transparent 55%,
+            rgba(0, 0, 0, .18) 100%);
+
+    pointer-events: none;
+}
+
+#circulo {
+    position: absolute;
+    top: -100px;
+    right: 5%;
+
+    width: 60%;
+    height: 130%;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(circle at 30% 25%,
+            rgba(255, 255, 255, 0.918) 0%,
+            rgba(255, 255, 255, .15) 25%,
+            rgba(255, 255, 255, .05) 50%,
+            transparent 75%),
+        radial-gradient(circle at 80% 80%,
+            rgba(255, 255, 255, 0.918) 0%,
+            rgba(255, 255, 255, .15) 25%,
+            rgba(255, 255, 255, .05) 50%,
+            transparent 75%);
+
+
+    overflow: hidden;
+    opacity: 0.7;
+    animation:
+        circle 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
+        circleFloat 8s ease-in-out infinite;
+        z-index: 1;
+}
+
+
+@keyframes circle {
+    from {
+        transform: skew(10deg);
+
+    }
+
+    to {
+        transform: skew(0deg);
+
+    }
+
+}
+
+#gradiente {
+    position: absolute;
+    top: 0;
+    right: 10%;
+
+    z-index: 3;
+
+    transform: scale(1.2);
+    opacity: .08;
+    animation: GradientSpin 20s linear infinite;
+}
+
+@keyframes GradientSpin {
+    from {
+        transform: rotate(0deg);
+
+    }
+
+    to {
+        transform: rotate(360deg);
+
+    }
+
+}
+
+#empezar,
+#perfil,
+#salir {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    overflow: hidden;
+    outline: none;
+    opacity: 0.9;
+    overflow: hidden;
+    outline: none;
+    background-color: transparent;
+    background-image: url('../imagenes/button2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(3px 7px 0px rgb(0, 0, 0)) drop-shadow(0 0 15px black);
+    border-top-right-radius: 20px;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#anaIcon {
+    position: absolute;
+    left: -40px;
+    transform: scale(0.2);
+    display: block;
+
+}
+
+@keyframes inEmpezar {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes inPerfil {
+    from {
+        opacity: 0;
+        filter: drop-shadow(0 0 15px black);
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        filter: drop-shadow(3px 7px 0px rgb(0, 0, 0));
+        transform: translateX(-30px);
+    }
+}
+
+
+@keyframes inSalir {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-80px);
+    }
+}
+
+
+#empezar:hover {
+    transform: translateX(2px);
+    background-image: url('../imagenes/buttonHover.png');
+}
+
+#perfil:hover {
+    transform: translateX(-28px);
+    background-image: url('../imagenes/buttonHover.png');
+}
+
+.hoverButton {
+    background-image: url('../imagenes/buttonHover.png') !important;
+}
+
+#salir:hover {
+    transform: translateX(-78px);
+    background-image: url('../imagenes/buttonHover.png');
+}
+
+#empezar {
+    animation: inEmpezar 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+#salir {
+    transform: translateX(-80px);
+    opacity: 0;
+    animation-delay: 3s;
+    animation: inSalir 2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+}
+
+#perfil {
+    transform: translateX(-35px);
+    animation-delay: 2s;
+    opacity: 0;
+    animation: inPerfil 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+#buttons {
+    margin-right: 20px;
+    transform: translateX(-85px);
+}
+
+
+#empezar .other {
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateX(-40px);
+    width: 190px !important;
+    display: block;
+    height: auto;
+    opacity: 1;
+    filter: invert(1) brightness(100);
+}
+
+#perfil .other,
+#salir .other {
+    margin-right: 20px;
+    transform: translateX(-40px);
+    width: 120px;
+    display: block;
+    height: auto;
+    filter: invert(1) brightness(100);
+}
+
+
+#chabalin {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    width: 55%;
+    z-index: 8;
+    opacity: 0;
+    perspective: 1000px;
+    filter:
+        drop-shadow(-5px 5px 0 rgb(59, 57, 57)) drop-shadow(0 0 40px rgba(255, 220, 170, .6));
+
+}
+
+.chabalinEntrando {
+    animation: chabalinIn 2s cubic-bezier(0.175, 0.885, 0.32, 1.375) forwards;
+}
+
+.chabalinDancante {
+    animation: chabalinDancante 2s cubic-bezier(0.175, 0.885, 0.32, 1.375) infinite;
+}
+
+@keyframes chabalinDancante {
+    0% {
+        opacity: 1;
+        transform: translateY(0px) rotate(-0.5deg) scale(1);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(-3px) rotate(0.5deg) scale(1.005);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0px) rotate(-0.5deg) scale(1);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateY(-2px) rotate(0.3deg) scale(1.003);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) rotate(-0.5deg) scale(1);
+    }
+}
+
+@keyframes chabalinIn {
+    from {
+        bottom: -50%;
+        opacity: 0;
+        transform: rotateX(3deg) skew(23deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0deg) skew(0deg);
+        bottom: 0;
+    }
+
+}
+
+#leftSide {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    width: 50%;
+    gap: 10px;
+}
+
+#logo {
+    --audioScale: 1;
+    transform: translateY(5px) scale(0.9);
+    height: 290px;
+    z-index: 5;
+    opacity: 0;
+    perspective: 1000px;
+}
+
+.logoIn {
+    animation: logo 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards
+}
+
+@keyframes logo {
+    from {
+        transform: translateY(-2px) scale(0.7) rotateX(60deg);
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(5px) scale(0.8) rotateX(0deg);
+
+    }
+
+}
+
+main {
+    height: 100vh;
+    width: 100vh;
+}
+
+#negro {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fadeInNegro {
+    animation: fadeIn 3s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+.fadeOutNegro {
+    animation: fadeOut 2s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+#this{
+    position:absolute;
+    transform: rotate(-20deg);
+    bottom: -39%;
+    right: -7%;
+    z-index: 2;
+}

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagenes/anaIcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/tienda.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiendaChabal</title>
+</head>
+
+<body>
+
+    <main>
+        <button id="volver">volver</button>
+        <div id="negro"></div>
+        <audio id="other" src="audio/jump.mp3"></audio>
+        <audio id="noMoney" src="audio/noLoTienes.mp3"></audio>
+        <audio id="dollar" src="audio/dollarz.mp3"></audio>
+        <audio id="theme" src="audio/tiendaChabal.mp3"></audio>
+        <audio id="abrir" src="audio/abrirTienda.mp3"></audio>
+        <div id="dineroActual">0 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <circle cx="12" cy="12" r="10" stroke="#000000" stroke-width="2"></circle>
+                    <path
+                        d="M15 9.94728C14.5 9.3 13.8 8.5 12 8.5C10.2 8.5 9 9.51393 9 9.94728C9 10.3806 9.06786 10.9277 10 11.5C10.7522 11.9618 12.6684 12.0439 13.5 12.5C14.679 13.1467 14.8497 13.8202 14.8497 14.0522C14.8497 14.6837 13.4175 15.4852 12 15.5C10.536 15.5153 9.5 14.7 9 14.0522"
+                        stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12 7V17" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </svg></div>
+        <div id="tienda">
+
+            <div id="barraTitulo">
+            </div>
+
+            <div id="cuadricula">
+                <div id="estante">
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div id="cuadro1" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_1.png">
+                    <h1>Trigo</h1>
+                    <div id="twoLeft">
+                        <p>$2</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number" p>
+                    </div>
+                </div>
+                <div id="cuadro2" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_2.png">
+                    <h1>Maíz</h1>
+                    <div id="twoLeft">
+                        <p>$3</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro3" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_3.png">
+                    <h1>Gusanos</h1>
+                    <div id="twoLeft">
+                        <p>$5</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro4" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_4.png">
+                    <h1>Saltamontes</h1>
+                    <div id="twoLeft">
+                        <p>$7</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro5" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_5.png">
+                    <h1>Semillas</h1>
+                    <div id="twoLeft">
+                        <p>$3</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="estante">
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+                <div id="cuadro6" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_6.png">
+                    <h1>Uvas</h1>
+                    <div id="twoLeft">
+                        <p>$8</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro7" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_7.png">
+                    <h1>Mariposas</h1>
+                    <div id="twoLeft">
+                        <p>$12</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro8" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_8.png">
+                    <h1>Mango</h1>
+                    <div id="twoLeft">
+                        <p>$10</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro9" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_9.png">
+                    <h1>Carroña</h1>
+                    <div id="twoLeft">
+                        <p>$15</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro10" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_10.png">
+                    <h1>Lenteja</h1>
+                    <div id="twoLeft">
+                        <p>$4</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="estante">
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+
+                <div id="cuadro11" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_11.png">
+                    <h1>Moscas</h1>
+                    <div id="twoLeft">
+                        <p>$6</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro12" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_12.png">
+                    <h1>Néctar</h1>
+                    <div id="twoLeft">
+                        <p>$18</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro13" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_13.png">
+                    <h1>Peces</h1>
+                    <div id="twoLeft">
+                        <p>$10</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro14" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_14.png">
+                    <h1>Girasol</h1>
+                    <div id="twoLeft">
+                        <p>$9</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro15" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_15.png">
+                    <h1>Bellotas</h1>
+                    <div id="twoLeft">
+                        <p>$11</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+                <div id="estante">
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+
+                <div id="cuadro16" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_16.png">
+                    <h1>Hormigas</h1>
+                    <div id="twoLeft">
+                        <p>$6</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro17" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_17.png">
+                    <h1>Huevos</h1>
+                    <div id="twoLeft">
+                        <p>$20</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro18" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_18.png">
+                    <h1>Arroz</h1>
+                    <div id="twoLeft">
+                        <p>$4</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro19" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_19.png">
+                    <h1>Camarones</h1>
+                    <div id="twoLeft">
+                        <p>$15</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro20" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_20.png">
+                    <h1>Serpiente</h1>
+                    <div id="twoLeft">
+                        <p>$10</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+                <div id="estante">
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+
+                <div id="cuadro21" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_21.png">
+                    <h1>Eucalipto</h1>
+                    <div id="twoLeft">
+                        <p>$14</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro22" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_22.png">
+                    <h1>Nueces</h1>
+                    <div id="twoLeft">
+                        <p>$13</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+
+
+                <div id="cuadro23" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_23.png">
+                    <h1>Escorpion</h1>
+                    <div id="twoLeft">
+                        <p>$13</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro24" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_24.png">
+                    <h1>Raton</h1>
+                    <div id="twoLeft">
+                        <p>$23</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro25" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_25.png">
+                    <h1>Escarabajo</h1>
+                    <div id="twoLeft">
+                        <p>$23</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+
+
+                <div id="estante">
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+
+
+                <div id="cuadro26" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_26.png">
+                    <h1>Papitas</h1>
+                    <div id="twoLeft">
+                        <p>$30</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+
+                <div id="cuadro27" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_27.png">
+                    <h1>Calamar</h1>
+                    <div id="twoLeft">
+                        <p>$30</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+
+                <div id="cuadro28" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_28.png">
+                    <h1>Cerdo</h1>
+                    <div id="twoLeft">
+                        <p>$35</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro29" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_29.png">
+                    <h1>Galleta</h1>
+                    <div id="twoLeft">
+                        <p>$40</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+
+                <div id="cuadro30" class="cuadro">
+                    <div class="añadir">+</div>
+                    <img src="imagenes/tienda/l0_sprite_30.png">
+                    <h1>Moño</h1>
+                    <div id="twoLeft">
+                        <p>$50</p>
+                        <p id="por">x</p>
+                        <input placeholder="0" type="number">
+                    </div>
+                </div>
+                <div id="estante">
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>
+
+        </div>
+
+
+        <div id="precio">
+            <div id="contenedorPrecio">
+                <h1>COMPRA</h1>
+                <p id="this"></p>
+                <h1 id="total">TOTAL: </h1>
+                <button id="pagar" type="button">COMPRAR</button>
+            </div>
+        </div>
+        <img id="cajero" src="imagenes/tienda/cajeroTranquilo.gif">
+        <div id="bar"></div>
+        <img id="canasta" src="imagenes/tienda/canasta.png">
+        <img id="datafono" src="imagenes/tienda/datafono.png">
+        <img id="caja" src="imagenes/tienda/caja.png">
+        <img id="planta" src="imagenes/tienda/planta.gif">
+    </main>
+
+    <script src="js/tienda.js"></script>
+
+</body>
+
+</html>
